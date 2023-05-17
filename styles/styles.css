@@ -1,0 +1,192 @@
+/* Box sizing */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+/* Generic */
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Variables */
+
+html {
+  --black: #151515;
+  --white: #FFF;
+  --gray: #444;
+}
+
+
+
+
+
+
+
+
+
+
+/* Text */
+
+html {
+  font: 300 18px / 1.5 'Outfit', sans-serif;
+  color: var(--gray);
+}
+
+h1 {
+  font: 900 60px / 1 'Big Shoulders Display', sans-serif;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+h2 {
+  font: 900 50px / 1 'Big Shoulders Display', sans-serif;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  html {
+    font-size: 22px;
+  }
+  
+  h1 {
+    font-size: 96px;
+  }
+  
+  h2 {
+    font-size: 60px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Cta */
+
+.cta {
+  /* Box */
+  display: block;
+  width: 204px;
+  padding: 24px 0;
+
+  /* Text */
+  font: 800 20px / 1 'Big Shoulders Display', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cta--primary {
+  background: var(--black);
+  color: var(--white);
+}
+
+.icon-arrow {
+  /* Box */
+  display: block;
+  width: 56px;
+
+  /* Decorative */
+  background: url(../assets/icon-arrow-right.svg) no-repeat center / 8px 24px, linear-gradient(#D5966C, #D5966C);
+}
+
+
+
+
+
+
+
+
+
+
+/* Hero */
+
+.hero {
+  max-width: min(90%);
+  margin: 0 auto;
+}
+
+.hero__image {
+  min-height: 240px;
+  margin: 0 0 32px 0;
+  background: url(../assets/mobile/image-hero@2x.jpg) no-repeat top / cover;
+}
+
+.hero__heading {
+  margin: 0 0 32px 0;
+}
+
+.hero__body {
+  margin: 0 0 32px 0;
+}
+
+@media screen and (min-width: 769px) {
+
+}
+
+@media screen and (min-width: 1201px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Helpers */
+
+.newline {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.border {
+  border: 1px solid black;
+}
